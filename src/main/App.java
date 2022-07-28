@@ -45,7 +45,7 @@ public class App {
         cat.setHungerStatus(9);
         cat.setFavouriteRecreationalActivity(recreationalActivity);
 
-        Dog dog = new Dog();
+        Animal dog = new Dog();
         dog.setAge(1);
         dog.setName("Rex");
         dog.setColor("White");
@@ -63,17 +63,16 @@ public class App {
         dogVet.setName("Dog vet");
         dogVet.setSpecialization("Dog specialist");
 
+        // Polymorphism in action
         Game catGame = new Game(adopter, catVet, cat);
         catGame.playGame();
-        cat.eat();
-        cat.sleep();
+        cat.speak("Weaaau!");
+        cat.speak("Meeeew!", 10);
+        cat.speak();
         catGame.stopGame();
 
         Game dogGame = new Game(adopter, dogVet, dog);
         dogGame.playGame();
-        dog.eat();
-        dog.sleep();
         dogGame.stopGame();
-
     }
 }

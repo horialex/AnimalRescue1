@@ -22,6 +22,10 @@ public class Animal {
         System.out.println("The animal " + name + " of type " + type + " is sleeping");
     }
 
+    public void speak(){
+        System.out.println("The animal makes a sound!");
+    }
+
     public String getName() {
         return name;
     }

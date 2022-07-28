@@ -20,6 +20,7 @@ public class Vet {
         this.specialization = specialization;
     }
 
+
     @Override
     public String toString() {
         return "Vet{" +

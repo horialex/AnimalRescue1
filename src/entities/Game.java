@@ -16,7 +16,12 @@ public class Game {
 
     public void playGame() {
         System.out.println("The game has started with the following entities: " + adopter + " : " + vet + " : " + animal);
+        animal.eat();
+        animal.speak();
+        animal.sleep();
     }
+
+
 
     public void stopGame() {
         System.out.println("The game has stopped!");
