@@ -7,33 +7,32 @@ import java.time.LocalDateTime;
 public class App {
     public static void main(String[] args) {
         Adopter adopter = new Adopter();
-        adopter.name = "Horatiu";
-        adopter.money = 99999999;
+        adopter.setName("Hori");
+        adopter.setMoney(999999);
 
         AnimalFood catFood = new AnimalFood();
-        catFood.name = "Purina";
-        catFood.available = true;
-        catFood.expiryDate = LocalDateTime.now().plusYears(2);
-        catFood.quantity = 200;
-        catFood.price = 5.5;
+        catFood.setName("Purina");
+        catFood.setAvailable(true);
+        catFood.setExpiryDate(LocalDateTime.now().plusYears(2));
+        catFood.setQuantity(200);
+        catFood.setPrice(5.25);
 
 
         RecreationalActivity recreationalActivity = new RecreationalActivity();
-        recreationalActivity.name = "Play";
+        recreationalActivity.setName("Play");
 
         Animal cat = new Animal();
-        cat.age = 1;
-        cat.name = "Tom";
-        cat.favouriteFood = catFood;
-        cat.happinessLevel = 2;
-        cat.healthStatus = 6;
-        cat.hungerStatus = 9;
-        cat.favouriteRecreationalActivity = recreationalActivity;
+        cat.setAge(1);
+        cat.setName("Tom");
+        cat.setFavouriteFood(catFood);
+        cat.setHappinessLevel(2);
+        cat.setHealthStatus(6);
+        cat.setHungerStatus(9);
+        cat.setFavouriteRecreationalActivity(recreationalActivity);
 
         Vet vet = new Vet();
-        vet.name = "Doctorul";
-        vet.specialization = "Cat specialist";
-
+        vet.setName("Doc");
+        vet.setSpecialization("Cat specialist");
 
         Game game = new Game(adopter, vet, cat);
         game.playGame();
