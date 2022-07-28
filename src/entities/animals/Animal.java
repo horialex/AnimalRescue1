@@ -1,13 +1,26 @@
-package entities;
+package entities.animals;
+
+import entities.food.AnimalFood;
+import entities.RecreationalActivity;
 
 public class Animal {
     private String name;
     private int age;
+    private String color;
     private int healthStatus;
     private int hungerStatus;
     private int happinessLevel;
+    protected String type;
     private AnimalFood favouriteFood;
     private RecreationalActivity favouriteRecreationalActivity;
+
+    public void eat(){
+        System.out.println("The animal " + name + " of type " + type + " is eating");
+    }
+
+    public void sleep(){
+        System.out.println("The animal " + name + " of type " + type + " is sleeping");
+    }
 
     public String getName() {
         return name;
@@ -65,16 +78,30 @@ public class Animal {
         this.favouriteRecreationalActivity = favouriteRecreationalActivity;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
+    public String getType() {
+        return type;
+    }
+
     @Override
     public String toString() {
         return "Animal{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", color='" + color + '\'' +
                 ", healthStatus=" + healthStatus +
                 ", hungerStatus=" + hungerStatus +
                 ", happinessLevel=" + happinessLevel +
-                ", favouriteFood='" + favouriteFood + '\'' +
-                ", favouriteRecreationalActivity='" + favouriteRecreationalActivity + '\'' +
+                ", favouriteFood=" + favouriteFood +
+                ", favouriteRecreationalActivity=" + favouriteRecreationalActivity +
                 '}';
     }
 }

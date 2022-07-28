@@ -1,4 +1,4 @@
-package entities;
+package entities.adopters;
 
 public class Adopter {
     private String name;

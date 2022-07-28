@@ -1,5 +1,8 @@
 package entities;
 
+import entities.adopters.Adopter;
+import entities.animals.Animal;
+
 public class Game {
     private Adopter adopter;
     private Vet vet;
@@ -11,11 +14,11 @@ public class Game {
         this.animal = animal;
     }
 
-    public void playGame(){
-        System.out.println("The game has started with the following entities: "  + adopter + " : " + vet + " : " + animal);
+    public void playGame() {
+        System.out.println("The game has started with the following entities: " + adopter + " : " + vet + " : " + animal);
     }
 
-    public void stopGame(){
+    public void stopGame() {
         System.out.println("The game has stopped!");
     }
 

@@ -1,4 +1,4 @@
-package entities;
+package entities.food;
 
 import java.time.LocalDateTime;
 
