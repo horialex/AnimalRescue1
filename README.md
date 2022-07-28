@@ -1,1 +1,1 @@
-# AnimalRescue1
+# AnimalRescue1 - Evozon internship project
