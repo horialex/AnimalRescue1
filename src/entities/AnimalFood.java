@@ -3,11 +3,11 @@ package entities;
 import java.time.LocalDateTime;
 
 public class AnimalFood {
-    String name;
-    double price;
-    int quantity;
-    LocalDateTime expiryDate;
-    boolean available;
+    public String name;
+    public double price;
+    public int quantity;
+    public LocalDateTime expiryDate;
+    public boolean available;
 
     @Override
     public String toString() {

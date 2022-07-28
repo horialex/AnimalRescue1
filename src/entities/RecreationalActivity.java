@@ -1,7 +1,7 @@
 package entities;
 
 public class RecreationalActivity {
-    String name;
+    public String name;
 
     @Override
     public String toString() {

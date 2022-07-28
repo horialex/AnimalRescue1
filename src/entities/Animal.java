@@ -1,13 +1,13 @@
 package entities;
 
 public class Animal {
-    String name;
-    int age;
-    int healthStatus;
-    int hungerStatus;
-    int happinessLevel;
-    AnimalFood favouriteFood;
-    RecreationalActivity favouriteRecreationalActivity;
+    public String name;
+    public int age;
+    public int healthStatus;
+    public int hungerStatus;
+    public int happinessLevel;
+    public AnimalFood favouriteFood;
+    public RecreationalActivity favouriteRecreationalActivity;
 
     @Override
     public String toString() {

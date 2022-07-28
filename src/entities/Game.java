@@ -1,9 +1,9 @@
 package entities;
 
 public class Game {
-    Adopter adopter;
-    Vet vet;
-    Animal animal;
+    public Adopter adopter;
+    public Vet vet;
+    public Animal animal;
 
     public Game(Adopter adopter, Vet vet, Animal animal) {
         this.adopter = adopter;

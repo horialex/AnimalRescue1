@@ -1,8 +1,8 @@
 package entities;
 
 public class Adopter {
-    String name;
-    double money;
+    public String name;
+    public double money;
 
     @Override
     public String toString() {

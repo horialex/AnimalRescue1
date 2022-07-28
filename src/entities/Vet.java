@@ -1,8 +1,8 @@
 package entities;
 
 public class Vet {
-    String name;
-    String specialization;
+    public String name;
+    public String specialization;
 
     @Override
     public String toString() {
