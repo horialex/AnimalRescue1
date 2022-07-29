@@ -12,3 +12,9 @@ those that don’t vary
 So encapsulation is not  only about having private fields and getters and setters but also about isolating complexity,
    so we can deal with it separately and not affect larger parts of the application if that changes
    
+*Favour composition over inheritance* - Object oriented programming provides 2 types of relationships between classes 
+and its instances. has-a (composition) and is-a (inheritance). This design principle essentially suggests us
+that “has-a relationship should be preferred over is-a relationship”
+Overuse of inheritance makes the code more rigid
+It is easier and more feasible to compose object based on other objects than to hard-wire their 
+connections using inheritance. If use use inheritance we will create tight coupled relations between objects

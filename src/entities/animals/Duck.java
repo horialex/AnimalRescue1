@@ -1,6 +1,8 @@
 package entities.animals;
 
-public class Duck extends Animal {
+import entities.behaviours.ISwim;
+
+public class Duck extends Animal implements ISwim {
 
     public Duck() {
         super.type = "Duck";
@@ -8,5 +10,9 @@ public class Duck extends Animal {
 
     public void speak() {
         System.out.println("Mac mac !");
+    }
+
+    public void swim() {
+        System.out.println("The duck swims above the water!");
     }
 }

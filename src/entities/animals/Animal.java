@@ -3,7 +3,7 @@ package entities.animals;
 import entities.food.AnimalFood;
 import entities.RecreationalActivity;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private String color;
@@ -22,9 +22,7 @@ public class Animal {
         System.out.println("The animal " + name + " of type " + type + " is sleeping");
     }
 
-    public void speak(){
-        System.out.println("The animal makes a sound!");
-    }
+    public abstract void speak();
 
     public String getName() {
         return name;
